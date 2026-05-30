@@ -1,0 +1,50 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&family=Inter:wght@300;400;500;600;700&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-serif: "Cormorant Garamond", Georgia, "Times New Roman", serif;
+  --font-sans: "Inter", system-ui, -apple-system, sans-serif;
+  --color-gold: #C8553D;
+  --color-gold-hover: #AD3B24;
+  --color-cream: #F5F0E8;
+  --color-charcoal: #0A0A0A;
+  --color-dark-gray: #111111;
+  --color-light-gray: #1E1E1E;
+  --color-terracotta: #C8553D;
+  --color-gold-10: rgba(200, 85, 61, 0.1);
+  --color-gold-20: rgba(200, 85, 61, 0.2);
+  --color-gold-50: rgba(200, 85, 61, 0.5);
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    background-color: var(--color-charcoal);
+    color: var(--color-cream);
+    font-family: var(--font-sans);
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-serif);
+  }
+}
+
+/* Custom scrollbar to keep consistency with the dark luxurious aesthetic */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: #0A0A0A;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #1E1E1E;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #C8553D;
+}
+
