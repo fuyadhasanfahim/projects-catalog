@@ -33,6 +33,37 @@ App starts at `http://localhost:3000`.
 
 ---
 
+### Doctor Portfolio Website
+
+**Live Demo:** [doctor-portfolio-website-five.vercel.app](https://doctor-portfolio-website-five.vercel.app)
+
+A professional single-page medical portfolio for a cardiologist — featuring animated sections, a filterable awards grid, a vertical career timeline, a patient testimonials carousel, and an appointment booking form with a blueprint-style clinic map.
+
+**Tech Stack:** React 19 · TypeScript · Vite · Tailwind CSS v4 · Motion · Lucide React · Express · Google Gemini API
+
+**Key Features:**
+- Animated hero with glowing orbs and credential badges
+- Stats counter with animated number roll-up
+- Expandable cardiac specialty service cards
+- Filterable awards & certifications grid
+- Alternating vertical career/education timeline
+- Testimonials carousel with dot navigation
+- Appointment booking form with validation and success state
+- Blueprint-style interactive clinic map
+- Sticky navbar with active section detection and mobile menu
+- Global skeleton loader with shimmer animation
+
+**Run locally:**
+```bash
+cd doctor-portfolio-website
+npm install
+npm run dev
+```
+
+App starts at `http://localhost:3000`.
+
+---
+
 ## Getting Started
 
 Clone the repository and navigate into the project you want to run:
@@ -52,13 +83,17 @@ Each project may require its own `.env` file. Check the project directory for a 
 
 ```
 projects-catalog/
-├── fine-dining-restaurant/    # Premium restaurant website
+├── fine-dining-restaurant/      # Premium restaurant website
 │   ├── src/
-│   │   ├── components/        # React components
-│   │   ├── data/              # Static data / content
-│   │   └── types.ts           # TypeScript types
-│   ├── index.html
-│   ├── vite.config.ts
+│   │   ├── components/
+│   │   ├── data/
+│   │   └── types.ts
+│   └── package.json
+├── doctor-portfolio-website/    # Medical portfolio for a cardiologist
+│   ├── src/
+│   │   ├── components/
+│   │   ├── data.ts
+│   │   └── types.ts
 │   └── package.json
 └── README.md
 ```

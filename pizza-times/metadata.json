@@ -1,0 +1,6 @@
+{
+  "name": "Pizza Times",
+  "description": "A premium, bold, dark-themed pizza experience tailored for the late-night cravings of Dhaka's foodies.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

@@ -1,0 +1,6 @@
+{
+  "name": "Doctor Portfolio Website",
+  "description": "A clean, modern, and trustworthy professional portfolio website for a doctor and medical consultant, featuring a virtual appointment scheduler, testimonials, education timeline, and specialties.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

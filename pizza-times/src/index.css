@@ -1,0 +1,63 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Outfit:wght@300;400;500;600;700;800&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Plus Jakarta Sans", ui-sans-serif, system-ui, sans-serif;
+  --font-display: "Anton", sans-serif;
+  --font-outfit: "Outfit", sans-serif;
+  
+  --color-brand-red: #FF4D3D;
+  --color-brand-yellow: #FFB627;
+  --color-cream: #F5EFE6;
+  --color-dark-bg: #121212;
+  --color-dark-card: #1A1410;
+}
+
+@layer utilities {
+  .text-glow-red {
+    text-shadow: 0 0 10px rgba(255, 77, 61, 0.5), 0 0 20px rgba(255, 77, 61, 0.2);
+  }
+  .text-glow-yellow {
+    text-shadow: 0 0 10px rgba(255, 182, 39, 0.5), 0 0 20px rgba(255, 182, 39, 0.2);
+  }
+  .shadow-glow-red {
+    box-shadow: 0 0 25px rgba(255, 77, 61, 0.35);
+  }
+  .shadow-glow-yellow {
+    box-shadow: 0 0 25px rgba(255, 182, 39, 0.3);
+  }
+  .bg-radial-glow {
+    background: radial-gradient(circle at center, rgba(255, 77, 61, 0.15) 0%, rgba(26, 20, 16, 0) 70%);
+  }
+  .bg-radial-glow-amber {
+    background: radial-gradient(circle at center, rgba(255, 182, 39, 0.12) 0%, rgba(26, 20, 16, 0) 70%);
+  }
+}
+
+/* Custom linear marquee animation */
+@keyframes marquee {
+  0% { transform: translateX(0%); }
+  100% { transform: translateX(-50%); }
+}
+
+.animate-marquee {
+  display: flex;
+  width: max-content;
+  animation: marquee 25s linear infinite;
+}
+
+/* Scrollbar styles for dark premium look */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #121212;
+}
+::-webkit-scrollbar-thumb {
+  background: #25201B;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #FF4D3D;
+}
+
