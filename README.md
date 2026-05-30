@@ -8,6 +8,8 @@ A curated collection of frontend and full-stack projects built by [Fuyad Hasan F
 
 ### Fine Dining Restaurant
 
+**Live Demo:** [fine-dining-restaurant-three.vercel.app](https://fine-dining-restaurant-three.vercel.app)
+
 A premium, visually stunning restaurant website with smooth page transitions, micro-interactions, a custom menu showcase, and a reservation UI.
 
 **Tech Stack:** React 19 · TypeScript · Vite · Tailwind CSS v4 · Framer Motion · Express · Google Gemini API
